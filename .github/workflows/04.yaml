@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: run number
         run: |
-          run number: $GITHUB_RUN_NUMBER
+          echo "run number: $GITHUB_RUN_NUMBER"
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
